@@ -7,7 +7,7 @@ public abstract class ProxyAutomobile {
 	private static model.AutomobileTable automobileTable;
 	private util.FileIO autoutil;
 
-	ProxyAutomobile() {
+	protected ProxyAutomobile() {
 		autoutil = new util.FileIO();
 	}
 
@@ -121,4 +121,34 @@ public abstract class ProxyAutomobile {
 		}
 		return returnValue;
 	}
+	
+	public void Operation(int opnumber, String[] input) {
+		// call some method in EditOption class
+	}
+	
+	/*
+	 * test
+	 */
+	//sync
+	UpdateOption(operationno, threadno, auto, optionset, fromcolor, tocolor)
+	// not sync
+	UpdateOption(operationno, threadno, auto, optionset, fromcolor, tocolor)
+	// Scalable scaleable = new BuildAuto();
+	String input[] = {1,1,"FordWagonZTW","Color","Blue","HawaiianGold"}
+	scaleable.operation(1, input);
+	// another thread
+	String input[] = {1,2,"FordWagonZTW","Color","Blue","CaliforniaGold"}
+	scaleable.operation(1, input);
+	
+	//Lot of print statements should be added in relevant method of auto, optionset, nd option and its okay to do so for lab4
+	
+	// which method should be synchronized in lab4?
+	1. model package? - significant performance repercusion?
+		2. proxyauto - design wise not localized
+		3. editoptions - opmethods that call other methods in the model package
+		
+		// how to use Hello.java in EditOption.java
+		
+		// Coffee is your auto
+	
 }
