@@ -78,10 +78,10 @@ public class Automobile implements java.io.Serializable {
 		try {
 			optionSetObject = optionSetList.get(OptionSetIndex);
 		} catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println("ArrayIndexOutOfBoundsException from getOptionSet");
+			System.out.println("Intentional ArrayIndexOutOfBoundsException from getOptionSet");
 			//e.printStackTrace();
 		} catch (Exception e) {
-			System.out.println("Exception from getOptionSet");
+			System.out.println("Intentional Exception from getOptionSet");
 			//e.printStackTrace();
 		}
 		return optionSetObject;

@@ -136,6 +136,7 @@ public abstract class ProxyAutomobile {
 		return returnValue;
 	}
 
+	/* scale.Scaleable Implementation */
 	public void operation(int operationNumber, String[] inputArguments) {
 		/*
 		 * scale.EditOptions mimics Hello.java

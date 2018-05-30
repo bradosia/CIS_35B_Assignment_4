@@ -156,8 +156,8 @@ String toString()</panel_attributes>
     <coordinates>
       <x>400</x>
       <y>210</y>
-      <w>710</w>
-      <h>240</h>
+      <w>760</w>
+      <h>270</h>
     </coordinates>
     <panel_attributes>adapter.ProxyAutomobile
 --
@@ -167,25 +167,27 @@ util.FileIO autoutil;
 ProxyAutomobile()
 boolean updateOptionSetName(String automobileKey, String optionSetName, String nameNew)
 boolean updateOptionPrice(String automobileKey, String optionSetName, String optionName, double priceNew)
+boolean updateOptionName(String automobileKey, String optionSetName, String optionName, String optionNameNew)
 String buildAuto(String filename)
 boolean printAuto(String automobileKey)
 boolean serialize(String automobileKey, String fileName)
 String deserialize(String fileName)
 boolean setOptionChoice(String automobileKey, String optionSetName, String optionName)
 public String getOptionChoice(String automobileKey, String optionSetName)
-public Double getOptionChoicePrice(String automobileKey, String optionSetName)</panel_attributes>
+public Double getOptionChoicePrice(String automobileKey, String optionSetName)
+public void operation(int operationNumber, String[] inputArguments) </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>490</x>
-      <y>440</y>
+      <y>470</y>
       <w>30</w>
-      <h>90</h>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -202,12 +204,12 @@ public Double getOptionChoicePrice(String automobileKey, String optionSetName)</
     <id>Relation</id>
     <coordinates>
       <x>810</x>
-      <y>440</y>
+      <y>470</y>
       <w>30</w>
-      <h>330</h>
+      <h>300</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;310.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;280.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -218,7 +220,7 @@ public Double getOptionChoicePrice(String automobileKey, String optionSetName)</
       <h>80</h>
     </coordinates>
     <panel_attributes>UML Diagram
-Assignment 3
+Assignment 4
 KBB Application
 By: Branden Lee</panel_attributes>
     <additional_attributes/>
@@ -286,12 +288,12 @@ String toString()</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>1070</x>
-      <y>440</y>
+      <y>470</y>
       <w>30</w>
-      <h>90</h>
+      <h>60</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -404,5 +406,29 @@ void warning(String str)</panel_attributes>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
     <additional_attributes>10.0;180.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1210</x>
+      <y>250</y>
+      <w>810</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>scale.EditOptions extends Thread
+--
+String automobileKey
+String optionSetName
+String optionName
+String optionNameNew
+int operationNumber
+int threadNumber
+adapter.ProxyAutomobile proxyAutomobile
+String[] inputArguments
+--
+EditOptions(adapter.ProxyAutomobile proxyAutomobile_, int operationNumber_, int threadNumber_, String[] inputArguments_)
+void run()
+		</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>

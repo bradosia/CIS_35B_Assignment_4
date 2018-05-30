@@ -208,3 +208,15 @@
 [05/29/18 22:59:40] ERROR #500: Automobile added conficts with another automobile
 [05/29/18 22:59:40] ERROR #500: Automobile added conficts with another automobile
 [05/29/18 22:59:40] ERROR #800: Index out of bounds for option set option choice
+[05/29/18 23:15:51] WARNING #102: Missing name attribute for option in the automobile text file
+[05/29/18 23:15:51] WARNING #102: Missing name attribute for option in the automobile text file
+[05/29/18 23:15:51] WARNING #102: Missing name attribute for option in the automobile text file
+[05/29/18 23:15:51] ERROR #500: Automobile added conficts with another automobile
+[05/29/18 23:15:51] ERROR #500: Automobile added conficts with another automobile
+[05/29/18 23:15:51] ERROR #800: Index out of bounds for option set option choice
+[05/29/18 23:16:39] WARNING #102: Missing name attribute for option in the automobile text file
+[05/29/18 23:16:39] WARNING #102: Missing name attribute for option in the automobile text file
+[05/29/18 23:16:39] WARNING #102: Missing name attribute for option in the automobile text file
+[05/29/18 23:16:39] ERROR #500: Automobile added conficts with another automobile
+[05/29/18 23:16:39] ERROR #500: Automobile added conficts with another automobile
+[05/29/18 23:16:39] ERROR #800: Index out of bounds for option set option choice

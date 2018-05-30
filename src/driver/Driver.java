@@ -19,13 +19,13 @@ public class Driver {
 		buildAutoInterface.init(); // only call this once
 		// Build Automobile Object from a file.
 		String FordZTWAutomobileKey = buildAutoInterface.buildAuto("FordZTW.txt");
-		String BMW320iAutomobileKey = buildAutoInterface.buildAuto("BMW320i.txt"); // unused
+		//String BMW320iAutomobileKey = buildAutoInterface.buildAuto("BMW320i.txt"); // unused
 		if (FordZTWAutomobileKey != null) {
 			// Print attributes before serialization
 			buildAutoInterface.printAuto(FordZTWAutomobileKey);
 			/*
 			 * We will start a bunch of operation threads to demonstrate multi-threading
-			 * Some operations depend on the order and may silently throw an exception that will be logged
+			 * Some operations depend on the order and silently throw an exception that will be logged
 			 */
 			String input[] = { FordZTWAutomobileKey, "Color", "French Blue Clearcoat Metallic",
 				"Cool California Blue" };
@@ -37,13 +37,6 @@ public class Driver {
 			buildAutoInterface.operation(0, input2); // Updates option name
 			buildAutoInterface.operation(1, input3); // Updates option set name
 			buildAutoInterface.operation(3, input4); // set color choice
-			
-			
-			//buildAutoInterface.updateOptionSetName(FordZTWAutomobileKey, "Color", "Colors");
-			// update an options set's option price
-			//buildAutoInterface.updateOptionPrice(FordZTWAutomobileKey, "Transmission", "automatic", 50);
-			// choose a transmission option
-			//buildAutoInterface.setOptionChoice(FordZTWAutomobileKey, "Transmission", "manual");
 		} else {
 			System.out.println("Could not build automobile");
 		}
